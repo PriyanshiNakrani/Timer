@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #50533C;
+   
+    
+    
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+
+
+.container {
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to top,#50533C,#BDC197);
+
+    padding-bottom: 60px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+                rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+                rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.timer-display {
+    width: 300px;
+    height: 300px;
+    background: #50533C;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+                rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+                rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+                rgba(0, 0, 0, 0.6) 0px 2px 1px,
+                rgba(0, 0, 0, 0.9) 0px 4px 2px,
+                rgba(0, 0, 0, 0.9) 0px 4px 2px,
+                rgba(0, 0, 0, 0.9) 0px 8px 4px,
+                rgba(0, 0, 0, 0.9) 0px 16px 8px,
+                rgba(0, 0, 0, 0.9) 0px 32px 16px;
+}
+
+.laps {
+    text-align: center;
+    color: #fff;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.laps li {
+    padding: 5px 0;
+}
+
+.action {
+    width: 85%;
+    margin: 40px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.action button {
+    padding: 15px 25px;
+    background-color: #BDC197;
+    color: #50533C;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+                rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+                rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+button:hover {
+    background-color: #BDC197;
+    border: 5px solid #50533C;
+}
+
+
+#lap, #resetLap {
+    flex: 1 1 40%; /* Make these buttons wider */
+    margin-left: 10px; /* Add left margin */
+}
